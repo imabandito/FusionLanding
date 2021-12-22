@@ -1,0 +1,511 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Roboto;
+}
+
+h1, h5 {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* ---------------Header--------------- */
+
+header, section {
+    background-color: #B2B2B2;
+    height: 100vh;
+}
+
+header {
+    background: url(../media/mainbg.jpg);
+}
+
+.container {
+    max-width: 1276px;
+    height: inherit;
+    margin: auto;
+    position: relative;
+}
+
+.menu {
+    display: flex;
+    justify-content: flex-start;
+    padding: 13px 0px;
+    margin: 0;
+    list-style: none;
+    border-bottom: 2px solid #8795A9;
+}
+
+.menu-item {
+    margin-right: 20px;
+}
+
+.menu-item:last-child {
+    margin-left: auto;
+}
+
+.menu-item-link {
+    font-size: 16px;
+    color: #fff;
+    transition: color 200ms ease;
+    text-decoration: none;
+}
+
+.menu-item-link:hover {
+    color: #EDEDED;
+}
+
+.header-introduction {
+    margin-top: 227px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+}
+
+.header-introduction h1 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 72px;
+}
+
+.header-introduction h5 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 80px;
+}
+
+.header-introduction .plan-btn {
+    width: 225px;
+    height: 48px;
+    background-color: #FBAD27;
+    border-style: none;
+    border-radius: 50px;
+    color: #fff;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16.7411px;
+    cursor: pointer;
+    transition: font-size 200ms ease;
+}
+
+.header-introduction .plan-btn a {
+    color: #fff;
+}
+
+
+.header-introduction .plan-btn:hover {
+    font-size: 17px;
+}
+
+.hamburger {
+    display: none;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #101010;
+}
+
+
+/* ---------------Welcome--------------- */
+
+.welcome {
+    background-color: #fff;
+    height: 80vh;
+}
+
+.welcome>.container {
+    height: inherit;
+}
+
+.welcome-info {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.welcome-info h1 {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 50px;
+    line-height: 65px;
+    color: #4A4A4A;
+}
+
+.info-description {
+    text-align: center;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 25px;
+    color: #757575;
+}
+
+.welcome-carousel-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.welcome-carousel-wrapper .controls {
+    display: flex;
+    justify-content: center;
+}
+
+input[type='radio']:after {
+    background-color: #FBAD27;
+}
+
+.radio-button {
+    display: inline-block;
+    position: relative;
+}
+
+.radio-button input[type='radio'] {
+    opacity: 0;
+    position: fixed;
+    width: 0;
+}
+
+.radio-button label {
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    background-color: #FBAD27;
+    font-family: sans-serif, Arial;
+    border: 3px solid #FBAD27;
+    border-radius: 45px;
+    margin: 10px;
+    transition: all 200ms ease;
+}
+
+.radio-button label {
+    margin-top: 10px;
+}
+
+.radio-button label:hover {
+    background-color: #FBAD27;
+    width: 30px;
+    height: 20px;
+    margin-top: 5px;
+}
+
+.radio-button input[type="radio"]:focus+label {
+    border: 3px solid #FBAD27;
+    width: 20px;
+    height: 20px;
+    padding: 0 10px;
+    margin-top: 5px;
+
+}
+
+.radio-button input[type="radio"]:checked+label {
+    background-color: #FBAD27;
+    border-color: rgb(255, 0, 106);
+    width: 20px;
+    height: 20px;
+    padding: 0 10px;
+    margin-top: 5px;
+
+}
+
+.welcome-carousel {
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: visible;
+    position: relative;
+}
+
+.welcome-carousel-cell {
+    position: relative;
+    box-sizing: border-box;
+    width: 309px;
+    height: 309px;
+    background-color: #fff;
+    padding: 56px;
+    border-radius: 10px;
+    transition: box-shadow 200ms ease;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.checked-carousel-cell {
+    z-index: 100;
+}
+
+.unchecked-carousel-cell {
+    z-index: 105;
+}
+
+.checked-carousel-cell {
+    -webkit-box-shadow: 0px 0px 67px 46px #FBAD27;
+    -moz-box-shadow: 0px 0px 67px 46px #FBAD27;
+    box-shadow: 0px 0px 67px 46px #FBAD27;
+}
+
+.welcome-carousel-cell .cell-square {
+    width: 40px;
+    height: 40px;
+    background: #FBAD27;
+    transition: all 200ms ease;
+}
+
+.welcome-carousel-cell:hover .cell-square {
+    width: 42px;
+    height: 32px;
+}
+
+.checked-carousel-cell .cell-square {
+    width: 42px;
+    height: 32px;
+}
+
+.cell-content .cell-content-header {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 80px;
+    color: #4A4A4A;
+}
+
+.cell-content .cell-content-info {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15.9936px;
+    line-height: 25px;
+    color: #757575;
+}
+
+.line {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    height: 2px;
+    background-color: #dfdfdf;
+}
+
+/* ---------------Booking--------------- */
+.booking {
+    height: 250px;
+    background: #FBAD27;
+}
+
+.booking-content {
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.booking-content .content-text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 25px;
+    color: #fff;
+}
+
+.content-btn {
+    width: 155px;
+    height: 48px;
+    background: transparent;
+    border-radius: 50px;
+    border-color: #fff;
+    border-style: solid;
+    color: #fff;
+    cursor: pointer;
+    transition: border-color, width 200ms ease;
+}
+
+.content-btn:hover {
+    border-color: rgb(255, 0, 106);
+    width: 200px;
+}
+
+/* ---------------Footer--------------- */
+.footer-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.footer-info-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 184px;
+}
+
+.info-box-header {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 80px;
+    color: #4A4A4A;
+}
+
+.footer-social-item i {
+    width: 25px;
+    height: 25px;
+}
+
+.footer-info-box a {
+    text-decoration: none;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 25px;
+    color: #616161;
+}
+
+.line-wrapper {
+    position: relative;
+}
+
+.footer-copypight {
+    width: 100%;
+    text-align: center;
+    margin: 20px 0 20px 0;
+    color: #616161;
+    overflow: hidden;
+}
+
+/* ---------------Modal--------------- */
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 110;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.modal-body-form {
+    display: grid;
+    grid-template-columns: max-content max-content;
+    grid-gap: 5px;
+    margin: 30px;
+}
+
+.modal-body-form label {
+    text-align: left;
+    color: #616161;
+    font-weight: normal;
+    font-size: 21px;
+}
+
+.modal-body-form input {
+    color: #616161;
+    background: transparent;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid #FBAD27;
+    text-align: center;
+}
+
+.modal-footer, .modal-header {
+    background: #FBAD27;
+    height: 100px;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal-header h2 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 72px;
+    color: #fff;
+    margin: 0;
+    justify-self: center;
+
+}
+
+.modal-header .close-modal {
+    color: white;
+    align-self: flex-start;
+    font-size: 38px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* ---------------Media--------------- */
+
+@media screen and (max-width: 950px) {
+    .welcome {
+        height: auto;
+    }
+
+    .welcome-carousel {
+        height: auto;
+        flex-direction: column;
+        margin-top: 140px;
+    }
+
+    .welcome-carousel-cell {
+        padding: 36px;
+        margin-top: 10px;
+    }
+
+    .controls {
+        margin-top: 60px;
+    }
+
+    .booking {
+        height: 180px;
+    }
+
+    .booking-content {
+        flex-direction: column;
+    }
+
+    .menu {
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+    }
+
+    .menu li {
+        text-align: center;
+    }
+
+    .menu-item:last-child {
+        margin-left: 0;
+    }
+}

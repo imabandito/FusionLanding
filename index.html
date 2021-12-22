@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <title>Travel</title>
+</head>
+
+<body>
+    <div class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Book Now</h2>
+                <span class="close-modal">&times;</span>
+
+            </div>
+            <div class="modal-body">
+                <div class=modal-body-form>
+                    <label for="fname">First name:</label>
+                    <input type="text" id="fname" name="fname">
+                    <label for="lname">Last name:</label>
+                    <input type="text" id="lname" name="lname">
+                    <label for="number">Phone Number:</label>
+                    <input type="number" id="number" name="number">
+                    <label for="book">What to book:</label>
+                    <input type="text" id="book" name="book">
+                </div>
+
+            </div>
+            <div class="modal-footer">
+                <button class="content-btn" id="submit-modal">Send</button>
+            </div>
+        </div>
+    </div>
+
+    <header>
+        <nav>
+            <div class="container">
+                <ul class="menu">
+                    <li class="menu-item">
+                        <a href="#welcome" class="menu-item-link">Home</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#booking" class="menu-item-link">Services</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#welcome" class="menu-item-link">About us</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#welcome" class="menu-item-link">Our Clients</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#welcome" class="menu-item-link">Blog</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#footer" class="menu-item-link">Contact Us</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="tel:0123456789" class="menu-item-link">Number: 0123456789</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="header-introduction">
+                <h1>Fusion travel</h1>
+                <h5>Lets Discover The World Together</h5>
+                <button class="plan-btn"><a href="#booking">Plan Tour Trip</a></button>
+            </div>
+        </div>
+    </header>
+
+
+    <section class="welcome" id="welcome">
+        <div class="container">
+            <div class="welcome-info">
+                <h1>Welcome to Fusion</h1>
+                <div class="info-description">Nam consectetur elementum neque vitae condimentum.
+                    Aenean dignissim, turpis et tincidunt finibus, massa purus malesuada metus, a
+                    commodo velit magna nec nibh. Donec dictum fringilla tempus. Nunc rhoncus sapien
+                    lectus, non fermentum neque euismod quis. Phasellus sagittis tortor in accumsan </div>
+            </div>
+            <div class="welcome-carousel-wrapper">
+                <div class="welcome-carousel">
+                    <div class="welcome-carousel-cell unchecked-carousel-cell">
+                        <div class="cell-square"></div>
+                        <div class="cell-content">
+                            <div class="cell-content-header">Best Price Guarantee
+                            </div>
+                            <div class="cell-content-info">
+                                SpaceTeam bootstrapping user centered design sticky note convergence
+                                fund parallax</div>
+                        </div>
+                    </div>
+                    <div class="welcome-carousel-cell checked-carousel-cell">
+                        <div class="cell-square"></div>
+                        <div class="cell-content">
+                            <div class="cell-content-header">Best Price Guarantee
+                            </div>
+                            <div class="cell-content-info">
+                                SpaceTeam bootstrapping user centered design sticky note convergence
+                                fund parallax</div>
+                        </div>
+                    </div>
+                    <div class="welcome-carousel-cell unchecked-carousel-cell">
+                        <div class="cell-square"></div>
+                        <div class="cell-content">
+                            <div class="cell-content-header">Best Price Guarantee
+                            </div>
+                            <div class="cell-content-info">
+                                SpaceTeam bootstrapping user centered design sticky note convergence
+                                fund parallax</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="controls">
+                    <div class="radio-button">
+                        <input type="radio" name="position" id="radio1" class="welcome-radio" />
+                        <label for="radio1"></label>
+                    </div>
+                    <div class="radio-button">
+                        <input type="radio" name="position" id="radio2" class="welcome-radio" checked />
+                        <label for="radio2"></label>
+                    </div>
+                    <div class="radio-button">
+                        <input type="radio" name="position" id="radio3" class="welcome-radio" />
+                        <label for="radio3"></label>
+                    </div>
+                </div>
+            </div>
+            <div class="line"></div>
+        </div>
+    </section>
+
+
+    <section class="booking" id="booking">
+        <div class="container">
+            <div class="booking-content">
+                <div class="content-text">Get special discount on your first journey</div>
+                <button class="content-btn" id="booking-btn">Book Now</button>
+            </div>
+        </div>
+    </section>
+
+
+    <footer id="footer">
+        <div class="container">
+            <div class="footer-info">
+                <div class="footer-info-box">
+                    <div class="info-box-header">About Us</div>
+                    <a href="">About Us</a>
+                    <a href="">Blog</a>
+                    <a href="">Contact Us</a>
+                </div>
+                <div class="footer-info-box">
+                    <div class="info-box-header">Adress</div>
+                    <a href="">4433 Heavner Court Plainview, New York</a>
+                </div>
+                <div class="footer-info-box">
+                    <div class="info-box-header">Contact Us</div>
+                    <a href="">Email: help@agency.com</a>
+                    <a href="">Number: 0123456789</a>
+                </div>
+                <div class="footer-info-box">
+                    <div class="footer-social">
+                        <div class="info-box-header">Follow Us</div>
+                        <a href="#" class="footer-social-item">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="footer-social-item">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="footer-social-item">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="line-wrapper">
+                <div class="line"></div>
+            </div>
+            <div class="footer-copypight">Copyright@Parag 2021, All Rights Reserved</div>
+        </div>
+
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
